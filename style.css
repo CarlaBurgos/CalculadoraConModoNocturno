@@ -1,0 +1,116 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    margin: 15px;
+}
+body {
+    background-color: #4d1ca82f;;
+    margin: 3em;
+    padding: 1em;
+}
+
+.container {
+    display: flex;
+    padding: 25px;
+    margin: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.calculadora {
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 160px repeat(5, 75px);
+    background-color: rgb(209, 204, 204);
+    padding: 15px;
+    border: 1px solid gray;
+    
+    border-radius: 32px;
+    box-shadow: 15px 10px 3px 0px #363636;
+}
+
+header, footer{
+    width: 100%;
+    border: 5px solid #4d1ca862;
+    border-radius: 32px;
+    text-align: center;
+    display: flow-root;
+    
+}
+
+
+
+button {
+    cursor: pointer;
+    margin: 5px;
+    padding: 0;
+    border-radius: 32px;
+    font-size: 1.5em;
+    border: none;
+    background-color: #4d1ca862;
+    box-shadow: 5px 5px 10px -3px #6b6b6bc7, -5px -5px 15px 3px #4e4e4e1f;
+}
+
+
+.col-2 {
+    grid-column: span 2;
+}
+
+.display {
+    grid-column: 1 / -1;
+    padding: 16px;
+    display: flex;
+    margin: 10px 10px 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #3636368a;
+    border-radius: 32px;
+    text-align: right;
+    justify-content: space-between;
+    word-break: break-all;
+    box-shadow: 0px 0px 0px 10px #00000033;
+}
+
+
+#valor-actual {
+    font-size: 1.5em;
+}
+
+#valor-anterior {
+    font-size: 2em;
+}
+
+/*DARK MODE*/
+.dark-mode {
+    background-color: rgba(0, 0, 0, 0.658);
+    color: white;
+  }
+.dark-mode footer{
+      border-color: #421a4d;
+  }
+.dark-mode header {
+    border-color: #421a4d;
+}
+
+.dark-mode .calculadora{
+    background-color: rgba(5, 1, 10, 0.562);
+    box-shadow: 15px 10px 0px #020202c5;
+    border: none;
+}
+.dark-mode button{
+    color: white;
+    background-color: #421a4d;
+    box-shadow: 5px 5px 10px -3px #ffffff40, -5px -5px 15px 3px #0000001f;
+}
+.dark-mode .display{
+    color: white;
+    background-color: #3636368a;
+    box-shadow: 0px 0px 0px 10px #29103085;;
+}
+
+.dark-mode *{
+    color: white;
+}
